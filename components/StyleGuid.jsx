@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
+import { Input } from './ui/input';
 
 const StyleGuid = () => {
    return (
@@ -23,6 +24,18 @@ const StyleGuid = () => {
             <Button variant='default'>Button 1</Button>
             <Button variant='orange'>Button 2</Button>
             <Button variant='input'>Button 3</Button>
+            <Button variant='orange' size='sm'>
+               Button 2
+            </Button>
+            {/* label & input */}
+            <div>
+               <label htmlFor='firstname'>First Name</label>
+               <Input type='firstname' id='firstName' />
+            </div>
+            <div>
+               <label htmlFor='lastname'>Last Name</label>
+               <Input type='lastname' id='lastname' />
+            </div>
          </div>
       </>
    );
