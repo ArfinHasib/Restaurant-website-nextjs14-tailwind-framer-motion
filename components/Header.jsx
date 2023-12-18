@@ -47,7 +47,10 @@ const Header = () => {
                   />
                </Link>
                {/* nav */}
-               <Nav />
+               <Nav
+                  containerStyles='hidden xl:flex gap-x-12 text-white'
+                  linkStyles='capitialize'
+               />
                {/* btn */}
                <ScrollLink to='reservation' smooth={true}>
                   <Button variant='orange' size='sm'>
