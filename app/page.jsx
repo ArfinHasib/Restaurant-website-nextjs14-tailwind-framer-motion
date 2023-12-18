@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import StyleGuid from '@/components/StyleGuid';
 
@@ -7,6 +8,7 @@ export default function Home() {
          className='w-full max-w-[1440px] bg-white mx-auto overflow-hidden'
          id='root'
       >
+         <Header />
          <Hero />
          {/* <StyleGuid /> */}
          <div className='h-[4000px]'></div>
