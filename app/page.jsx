@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Menu from '@/components/Menu';
 import StyleGuid from '@/components/StyleGuid';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       >
          <Header />
          <Hero />
+         <Menu />
          {/* <StyleGuid /> */}
          <div className='h-[4000px]'></div>
       </main>
