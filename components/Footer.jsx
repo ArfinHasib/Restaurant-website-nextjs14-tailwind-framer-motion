@@ -7,7 +7,13 @@ import Image from 'next/image';
 
 const Footer = () => {
    return (
-      <footer className='bg-footer bg-cover bg-no-repeat text-white pt-16'>
+      <motion.footer
+         variants={fadeIn('up', 0.2)}
+         initial='hidden'
+         whileInView={'show'}
+         viewport={{ once: false, amount: 0 }}
+         className='bg-footer bg-cover bg-no-repeat text-white pt-16'
+      >
          <div className='container mx-auto'>
             {/* logo */}
             <div className='flex flex-col justify-between xl:flex-row'>
@@ -105,7 +111,7 @@ const Footer = () => {
                </p>
             </div>
          </div>
-      </footer>
+      </motion.footer>
    );
 };
 
